@@ -5,7 +5,7 @@ a.social {
 }
 a.social:hover {
   transform: translateY(-0.5rem);
-  color: rgb(201, 180, 17);
+  color: rgb(233, 209, 28);
 }
 a.facebook {
   color: rgba(238, 236, 236, 0.946);

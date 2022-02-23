@@ -5,17 +5,19 @@ function HomeArticleCard(props) {
 
   return (
     <div>
-      <div class="card">
-        <img src={image} class="card-img-top" alt={title} />
-        <div class="card-body">
+      <div className="card text-white">
+        <Link to="/articles">
+          <img className="card-img-top" src={image} alt={title} />
+        </Link>
+        <div className="card-body">
           <Link className="link-none" to="/articles">
             {title}
           </Link>
-          <p class="card-text">{description}</p>
+          <p className="card-text">{description}</p>
         </div>
       </div>
     </div>
   )
 }
 
-export default HomeArticleCard;
+export default HomeArticleCard
