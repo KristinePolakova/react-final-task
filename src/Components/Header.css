@@ -1,0 +1,14 @@
+.navbar{
+    background-color: #000;
+}
+.nav-link{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.25rem;
+    color: rgba(238, 236, 236, 0.946)!important;
+}
+.nav-link:hover {
+    color: rgb(201, 180, 17)!important;
+    
+}
+
+
