@@ -13,7 +13,7 @@ function Content() {
                 <Route path="/articles" element={<Articles />} />
                 <Route path="/chat" element={<Chat />} />
                 <Route path="/register" element={<Register />} />
-                <Route path="/about-me" element={<AboutMe />} />
+                <Route path="/aboutMe" element={<AboutMe />} />
             </Routes>
 
         </div>

@@ -28,27 +28,27 @@ function Header() {
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link header-nav-link" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/articles">
+              <Link className="nav-link header-nav-link" to="/articles">
                 Articles
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/chat">
+              <Link className="nav-link header-nav-link" to="/chat">
                 Chat
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/register">
+              <Link className="nav-link header-nav-link" to="/register">
                 Register
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/aboutMe">
+              <Link className="nav-link header-nav-link" to="/aboutMe">
                 About me
               </Link>
             </li>

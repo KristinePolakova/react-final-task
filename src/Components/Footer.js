@@ -6,7 +6,7 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-9 p-3">
-            <span class="text-muted font-family">
+            <span className="text-muted font-family">
               &copy; 2022 Copyright: Kristīne Poļakova
             </span>
           </div>
