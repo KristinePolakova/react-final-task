@@ -3,6 +3,7 @@ import "../Components/AboutMe.css"
 import AboutMeContact from "../Components/AboutMeContact"
 import AboutMeCv from "../Components/AboutMeCv"
 import AboutMeInfo from "../Components/AboutMeInfo"
+import GoogleMap from "../Components/GoogleMap"
 
 function AboutMe() {
   return (
@@ -105,7 +106,9 @@ function AboutMe() {
         <div className="col-md-12 p-3">
           <h2>Contacts</h2>
         </div>
-        <div className="col-sm-12 col-md-6"></div>
+        <div className="col-sm-12 col-md-6">
+          <GoogleMap />
+        </div>
         <div className="col-sm-12 col-md-6">
           <ul className="list-unstyled">
             <li>Address:</li>
