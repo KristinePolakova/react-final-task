@@ -74,7 +74,7 @@ function AboutMe() {
               </button>
             </div>
           </nav>
-          <div className="tab-content" id="nav-tabContent">
+          <div className="tab-content pb-4 px-2" id="nav-tabContent">
             <div
               className="tab-pane fade show active"
               id="nav-home"
@@ -102,7 +102,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <div className="row font-family">
+      <div className="row font-family pb-4">
         <div className="col-md-12 p-3">
           <h2>Contacts</h2>
         </div>

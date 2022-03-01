@@ -2,7 +2,7 @@ import SocialFollow from "./SocialFollow";
 
 function Footer() {
   return (
-    <footer className="my-4 border-top footer">
+    <footer className="footer py-2">
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-9 p-3">

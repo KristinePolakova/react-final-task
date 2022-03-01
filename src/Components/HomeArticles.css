@@ -4,12 +4,12 @@
   font-size: large;
 }
 
-.card:hover .card-text {
+.card:hover .card-text{
   color: rgb(233, 209, 28);
 }
-.card:hover .link-none{
-    color: rgb(233, 209, 28);
-    font-size: xx-large;
+.card:hover .link-none  {
+  color: rgb(233, 209, 28);
+  font-size: xx-large;
 }
 .card:hover {
   opacity: 0.5;
@@ -20,3 +20,12 @@
   text-decoration: transparent;
   font-size: x-large;
 }
+.linkDecoration {
+  color: white!important;
+  text-decoration: none;
+  
+}
+.linkDecoration:hover {
+  color: rgb(233, 209, 28)!important;
+}
+

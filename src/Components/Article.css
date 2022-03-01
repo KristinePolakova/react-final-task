@@ -1,0 +1,22 @@
+.articleContainer {
+  background: linear-gradient(
+    to bottom,
+    #000 0%,
+    rgba(0, 0, 0, 0.9) 75%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.fancyBoxImg {
+  width: 100%;
+  height: auto;
+}
+.breadcrumbDecoration {
+    color: white;
+    text-decoration: none;
+}
+.breadcrumbDecoration:hover {
+    color: rgb(233, 209, 28);
+}
+.articleText {
+    color: white;
+}

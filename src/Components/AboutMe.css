@@ -5,3 +5,12 @@
 .active-breadcrumb {
     color: rgb(233, 209, 28)!important;
 }
+.aboutMeBackground {
+        background: linear-gradient(
+          to bottom,
+          #000 0%,
+          rgba(0, 0, 0, 0.9) 75%,
+          rgba(0, 0, 0, 0.8) 100%
+        );
+        color:white;
+}

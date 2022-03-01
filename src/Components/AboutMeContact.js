@@ -1,6 +1,7 @@
+import '../Components/AboutMe.css'
 function AboutMeContact() {
   return (
-    <div className="row p-4 font-family">
+    <div className="row p-4 font-family aboutMeBackground ">
       <div className="col-sm-12 col-md-4 d-flex align-items-center">
         <img
           src="/images/valters.jpeg"

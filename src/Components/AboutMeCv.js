@@ -1,6 +1,6 @@
 function AboutMeCv() {
   return (
-    <div className="row p-4 font-family">
+    <div className="row p-4 font-family aboutMeBackground ">
       <div className="col">
         <h3>Radošā darbība:</h3>
 
