@@ -4,16 +4,16 @@ import Articles from "../Pages/Articles";
 import Chat from "../Pages/Chat";
 import Home from "../Pages/Home";
 import Register from "../Pages/Register";
-import ArticleHome from "./ArticleHome";
-import ArticlesHome from "./ArticlesHome";
+import HomeArticle from "./HomeArticle";
+import HomeArticles from "./HomeArticles";
 
 function Content() {
     return (
         <div>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/articlesHome" element={<ArticlesHome />} />
-                <Route path="/articlesHome/:index" element={<ArticleHome />} />
+                <Route path="/articlesHome" element={<HomeArticles />} />
+                <Route path="/articlesHome/:index" element={<HomeArticle />} />
                 <Route path="/articles" element={<Articles />} />
                 <Route path="/chat" element={<Chat />} />
                 <Route path="/register" element={<Register />} />
