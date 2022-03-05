@@ -3,6 +3,7 @@ import { Form } from "semantic-ui-react"
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as Yup from "yup"
+import '../Components/RegisterForm.css'
 
 function RegisterForm() {
   const validationSchema = Yup.object().shape({
@@ -12,6 +13,11 @@ function RegisterForm() {
     confirmPassword: Yup.string()
       .required("Confirm Password is required")
       .oneOf([Yup.ref("password")], "Passwords must match"),
+    firstName: Yup.string().required(),
+    username: Yup.string().required(),
+    country: Yup.string().required(),
+    checkbox: Yup.bool()
+    .oneOf([true]),
   })
 
   const formOptions = { resolver: yupResolver(validationSchema) }
@@ -35,11 +41,10 @@ function RegisterForm() {
               className="form-control"
               placeholder="Username*"
               name="username"
-              {...register("username", { required: true })}
+              {...register("username")}
             />
           </div>
         </Form.Field>
-        <div className="invalid-feedback"></div>
         {errors.firstName && (
           <p style={{ color: "red" }}>Please fill in username</p>
         )}
@@ -78,7 +83,7 @@ function RegisterForm() {
               className="form-control"
               placeholder="First name*"
               name="fistName"
-              {...register("firstName", { required: true })}
+              {...register("firstName")}
             />
           </div>
         </Form.Field>
@@ -102,7 +107,7 @@ function RegisterForm() {
               <select
                 className="form-select"
                 name="country"
-                {...register("country", { required: true })}
+                {...register("country")}
               >
                 <option value="">Country*</option>
                 <option value="Estonia">Estonia</option>
@@ -116,13 +121,15 @@ function RegisterForm() {
           <p style={{ color: "red" }}>Please select your country</p>
         )}
         <Form.Field>
-          <div className="form-group form-check">
+          <div className="form-group form-check pb-5">
             <input
               className="form-check-label"
-              {...register("checkbox", { required: true })}
+              {...register("checkbox")}
               type="checkbox"
             />
-            Agree with terms and conditions*
+            <span className="linkDecoration p-1">
+              Agree with terms and conditions*
+            </span>
           </div>
         </Form.Field>
         {errors.checkbox && (
@@ -132,7 +139,7 @@ function RegisterForm() {
         )}
         <button
           type="submit"
-          className="btn btn-light btn-outline-dark mt-3 mb-5"
+          className="btn btn-light btn-outline-dark mt-3 mb-5 btnDecoration"
         >
           Register
         </button>
