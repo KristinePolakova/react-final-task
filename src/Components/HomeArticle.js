@@ -6,6 +6,7 @@ import '../Components/Article.css'
 function HomeArticle() {
   const { index } = useParams()
   const article = getArticleByIndex(index)
+  
   return (
     <div className="container-fluid articleContainer font-family px-5">
       <div className="row px-5">
