@@ -5,3 +5,6 @@
   .btnDecoration:hover {
     color: rgb(233, 209, 28)!important;
   }
+  .color{
+      color: white;
+  }

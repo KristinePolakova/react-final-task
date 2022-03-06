@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom"
 import getArticles from "../API/getArticles"
 import "../Components/HomeArticles.css"
-
 import "../Components/HomeArticles.css"
 
 function HomeArticles() {
+  
   const articles = getArticles()
+  const articlesPerPage = 3
 
-  const articlesList = articles.map((article, index) => {
+  const articlesList = articles.slice(0, articlesPerPage).map((article, index) => {
     return (
       <div className="card text-white" key={index}>
         <Link to={`/articlesHome/${index}`}>

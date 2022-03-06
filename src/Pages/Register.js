@@ -26,6 +26,7 @@ function Register() {
           </div>
           <div className="row">
             <div className="col-md-4">
+              <h3 className="color pb-4">Register</h3>
               <RegisterForm />
             </div>
           </div>
