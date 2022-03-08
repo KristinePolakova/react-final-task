@@ -1,23 +1,45 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import getMessages from "../API/getMessages"
+import "../Components/Chat.css"
 
 function Chat() {
-  const [messages, setMessages] = useState(getMessages())
-  const [newChatMessage, setNewChatMessage] = useState("")
+  const [chatMessages, setChatMessages] = useState(getMessages())
+  const [newChatMessage, setNewChatMessage] = useState([])
+
+  const [username, setUsername] = useState("")
+  const [message, setMessage] = useState("")
+
+  let today = new Date()
+  let date =
+    ("0" + today.getDate()).slice(-2) +
+    "." +
+    "0" +
+    (today.getMonth() + 1) +
+    "." +
+    today.getFullYear()
+  let min = String(today.getMinutes()).padStart(2, "0")
+  let hours = String(today.getHours()).padStart(2, "0")
+  let time = hours + ":" + min
+  let dateAndTime = date + " " + time
 
   const addNewMessage = () => {
-    const newMessage = {
-      username: "Pēteris",
-      time: "25.11.2021 21:18",
-      message: newChatMessage,
+    const addNewMessage = {
+      username: username,
+      time: dateAndTime,
+      message: message,
     }
-    setMessages([...messages, newMessage])
-    setNewChatMessage('')
+    setChatMessages([...chatMessages, addNewMessage])
+    setMessage("")
   }
 
-  const messageList = messages.map((message, index) => {
+  const submitData = (e) => {
+    e.preventDefault()
+  }
+
+  const messageList = chatMessages.map((message, index) => {
     return (
-      <div className="row border-bottom border-dark" key={index}>
+      <div className="row border-bottom" key={index}>
         <div className="col-md-12 d-flex justify-content-start">
           <div className="p-2">
             <h5>{message.username}</h5>
@@ -34,34 +56,74 @@ function Chat() {
   })
 
   return (
-    <div className="container border border-dark my-5">
-      {messageList}
-      <div className="col-md-4">
-        <label>Username:</label>
-        <input type="text" className="form-control" id="username" />
-      </div>
-      <div className="row pb-3">
-        <div className="col-md-9">
-          <div className="form-outline mb-4">
-            <label className="form-label">Message:</label>
-            <textarea
-              className="form-control"
-              id="message"
-              rows="3"
-              value={newChatMessage}
-              onChange={(event) => setNewChatMessage(event.target.value)}
-            ></textarea>
+    <div className="chatContainer font-family">
+      <div className="container ">
+        <div className="row">
+          <div className="col-sm-12 my-3">
+            <nav aria-label="breadcrumb">
+              <ol className="breadcrumb">
+                <li className="breadcrumb-item nav-link">
+                  <Link className="linkDecoration" to="/">
+                    Home
+                  </Link>
+                </li>
+                <li
+                  className="breadcrumb-item active nav-link active-breadcrumb font-family"
+                  aria-current="page"
+                >
+                  Chat
+                </li>
+              </ol>
+            </nav>
           </div>
         </div>
-        <div className="col-md-1 d-flex align-items-end">
-          <button
-            type="submit"
-            className="btn btn-success btn-block mb-4"
-            id="chat-button"
-            onClick={addNewMessage}
-          >
-            Send
-          </button>
+        <div className="row">
+          <div className="col-md-12">
+            <h3 className="color pb-4">Register</h3>
+          </div>
+        </div>
+
+        <div className=" border border-light px-3">
+          {messageList}
+          <form onSubmit={submitData}>
+            <div className="row pt-4">
+              <div className="col-md-4 p-2">
+                <label>Username:</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="username"
+                  name="username"
+                  value={username}
+                  onChange={(event) => setUsername(event.target.value)}
+                />
+              </div>
+            </div>
+            <div className="row pb-3">
+              <div className="col-md-9 p-2">
+                <div className="form-outline mb-4">
+                  <label className="form-label">Message:</label>
+                  <textarea
+                    className="form-control"
+                    id="message"
+                    rows="3"
+                    name="message"
+                    value={message}
+                    onChange={(event) => setMessage(event.target.value)}
+                  ></textarea>
+                </div>
+              </div>
+              <div className="col-md-1 d-flex align-items-end">
+                <button
+                  type="submit"
+                  className="btn btn-light btn-block mb-4 chat-button"
+                  onClick={addNewMessage}
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
