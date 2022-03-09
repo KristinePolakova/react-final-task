@@ -1,6 +1,6 @@
 .registerContainer{
     background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
-  
+    min-height: 82vh;
   }
   .btnDecoration:hover {
     color: rgb(233, 209, 28)!important;

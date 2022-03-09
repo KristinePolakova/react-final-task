@@ -39,7 +39,7 @@ function Chat() {
 
   const messageList = chatMessages.map((message, index) => {
     return (
-      <div className="row border-bottom" key={index}>
+      <div className="row border-bottom" key={index} >
         <div className="col-md-12 d-flex justify-content-start">
           <div className="p-2">
             <h5>{message.username}</h5>
@@ -77,18 +77,21 @@ function Chat() {
             </nav>
           </div>
         </div>
-        <div className="row">
+        <div className="row" >
           <div className="col-md-12">
-            <h3 className="color pb-4">Register</h3>
+            <h3 className="color pb-4">Chat</h3>
           </div>
         </div>
 
-        <div className=" border border-light px-3">
+        <div className="border rounded border-light " >
+          <div id="chat-username-date" className="border-bottom">
           {messageList}
+          </div>
+          
           <form onSubmit={submitData}>
-            <div className="row pt-4">
-              <div className="col-md-4 p-2">
-                <label>Username:</label>
+            <div className="row p-3">
+              <div className="col-md-4 py-2">
+                <label className="form-label">Username:</label>
                 <input
                   type="text"
                   className="form-control"
@@ -99,8 +102,8 @@ function Chat() {
                 />
               </div>
             </div>
-            <div className="row pb-3">
-              <div className="col-md-9 p-2">
+            <div className="row px-3">
+              <div className="col-md-9 py-2">
                 <div className="form-outline mb-4">
                   <label className="form-label">Message:</label>
                   <textarea
@@ -113,7 +116,7 @@ function Chat() {
                   ></textarea>
                 </div>
               </div>
-              <div className="col-md-1 d-flex align-items-end">
+              <div className="col-md-1 d-flex align-items-end pb-2">
                 <button
                   type="submit"
                   className="btn btn-light btn-block mb-4 chat-button"
