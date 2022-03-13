@@ -4,9 +4,12 @@ import HomeArticles from "../Components/HomeArticles";
 
 function Home() {
   return (
-    <div>
+    <div className="home-container">
       <Carousel />
+      <div className="mt-5">
       <HomeArticles />
+      </div>
+      
     </div>
   )
 }

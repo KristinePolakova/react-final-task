@@ -26,7 +26,7 @@ function HomeArticles() {
   })
 
   return (
-    <div className="container p-0 my-5">
+    <div className="container mt-5 my-0 px-0 pb-5">
       <div className="card-group font-family">{articlesList}</div>
     </div>
   )

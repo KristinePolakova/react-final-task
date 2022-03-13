@@ -20,7 +20,7 @@
 
 .previousBttn, .nextBttn{
     text-decoration: none;
-    color: rgb(233, 209, 28);
+    color: white;
 }
 .previousBttn:hover, .nextBttn:hover {
     color: rgb(233, 209, 28);

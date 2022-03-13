@@ -1,6 +1,6 @@
 function AboutMeInfo() {
   return (
-    <div className="row p-5 font-family aboutMeBackground ">
+    <div className="row p-5 font-family">
       <div className="col-md-4">
         <img
           src="/images/valters.jpeg"

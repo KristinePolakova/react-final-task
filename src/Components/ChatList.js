@@ -6,7 +6,7 @@ function ChatList(props) {
         return <ChatMessage message={message} key={index}/>
     })
   return (
-    <div className="row border-bottom">
+    <div className="row">
         {chatList}
     </div>
   )

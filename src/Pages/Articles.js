@@ -46,7 +46,8 @@ function Articles() {
     })
 
   return (
-    <div className="container articleContainer font-family">
+    <div className="articleContainer font-family">
+      <div className="container ">
       <div className="row mx-5 px-5">
         <div className="col-sm-12 my-3">
           <nav aria-label="breadcrumb">
@@ -83,6 +84,8 @@ function Articles() {
         </div>
       </div>
     </div>
+    </div>
+    
   )
 }
 
