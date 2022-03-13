@@ -5,6 +5,7 @@
     rgba(0, 0, 0, 0.9) 75%,
     rgba(0, 0, 0, 0.8) 100%
   );
+  min-height: 82vh;
 }
 .fancyBoxImg {
   width: 100%;
