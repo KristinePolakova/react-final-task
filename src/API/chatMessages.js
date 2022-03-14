@@ -4,7 +4,6 @@ const baseUrl = "http://localhost:3000/tasks"
 
 export async function getMessages() {
   const response = await axios.get(baseUrl)
-
   return response.data
 }
 

@@ -1,31 +1,32 @@
 .paginationsBttns {
-    width: 95%;
-    height: 0.5rem;
-    list-style: none;
-    color: white;
-    display: flex;
-    justify-content: right;
+  width: 95%;
+  height: 0.5rem;
+  list-style: none;
+  color: white;
+  display: flex;
+  justify-content: right;
 }
 .paginationsBttns a {
-    padding: 0.4rem;
-    margin: 0.1rem;
+  padding: 0.4rem;
+  margin: 0.1rem;
   border-color: white;
   border-radius: 5px;
   border: 1px solid;
   cursor: pointer;
 }
 .paginationsBttns a:hover {
-    background-color: rgba(0, 0, 0, 0.837);
+  background-color: rgba(0, 0, 0, 0.837);
 }
-
-.previousBttn, .nextBttn{
-    text-decoration: none;
-    color: white;
+.previousBttn,
+.nextBttn {
+  text-decoration: none;
+  color: white;
 }
-.previousBttn:hover, .nextBttn:hover {
-    color: rgb(233, 209, 28);
+.previousBttn:hover,
+.nextBttn:hover {
+  color: rgb(233, 209, 28);
 }
 .paginationActive a {
-    color: rgb(233, 209, 28)!important;
-    background-color: rgba(0, 0, 0, 0.837);
+  color: rgb(233, 209, 28) !important;
+  background-color: rgba(0, 0, 0, 0.837);
 }

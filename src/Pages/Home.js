@@ -1,6 +1,5 @@
-
 import Carousel from "../Components/Carousel"
-import HomeArticles from "../Components/HomeArticles";
+import HomeArticles from "../Components/HomeArticles"
 
 function Home() {
   return (
@@ -11,4 +10,4 @@ function Home() {
   )
 }
 
-export default Home;
+export default Home

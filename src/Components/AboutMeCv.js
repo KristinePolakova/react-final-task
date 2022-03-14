@@ -3,7 +3,6 @@ function AboutMeCv() {
     <div className="row p-4 font-family">
       <div className="col">
         <h3>Radošā darbība:</h3>
-
         <ul className="list-unstyled">
           <li>
             2019. g. - fotoizstāde „Gudro suņu brīvdienas” TC MOLS, RSU

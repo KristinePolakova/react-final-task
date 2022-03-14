@@ -17,11 +17,12 @@ a.flickr {
   color: rgba(238, 236, 236, 0.946);
 }
 .footer {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.9) 60%, #000 100%);
-      min-height: 8vh;
-  }
-.font-family {
-    font-family: 'Montserrat Alternates', sans-serif; 
-    font-size: 1.1rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.9) 60%,
+    #000 100%
+  );
+  min-height: 8vh;
 }
 

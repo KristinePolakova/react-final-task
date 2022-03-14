@@ -7,10 +7,6 @@
   );
   min-height: 82vh;
 }
-.fancyBoxImg {
-  width: 100%;
-  height: auto;
-}
 .breadcrumbDecoration {
     color: white;
     text-decoration: none;

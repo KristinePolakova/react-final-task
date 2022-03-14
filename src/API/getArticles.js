@@ -2,7 +2,7 @@ function getArticles() {
   return [
     {
       title: "Fotoizstāde - Piedzimis Piederīgs",
-      description: " Mēs visi esam tik atšķirīgi un tomēr tik līdzīgi.",
+      description: "Mēs visi esam tik atšķirīgi un tomēr tik līdzīgi.",
       image: "/images/bornToBelong.jpeg",
       longDescription:
         " Fotoizstādē “Piedzimis piederīgs?” 20 portretos attēloti cilvēki ar garīga rakstura traucējumiem un viņu atziņas. Ar izstādi aktualizējam mūsu pārliecību, ka visi esam tik atšķirīgi un tomēr tik līdzīgi. Fotomākslinieks Valters Poļakovs. Idejas autors Pēteris Martukāns. Ventspilī, Pārventas bibliotēkā no 16. septembra līdz 8. oktobrim. Līgatnē, Zeit mākslas telpā no 1. decembra līdz 31. decembrim. Rīgā, Latvijas Nacionālajā  bibliotēkā no 18. janvāra līdz. 18. februārim. Izstāde tapusi projekta “Bērni nepiedzimst ar aizspriedumiem” ietvaros,kurš Latvijā tiek īstenots sadarbībā ar Glada Hudik teātra apvienību, Zviedrijas vēstniecību un Zviedrijas institūta finansiālu atbalstu.",

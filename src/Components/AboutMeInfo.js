@@ -24,10 +24,9 @@ function AboutMeInfo() {
             dzirdēt un mīlēt.
           </li>
           <li>
-            <strong>Profesionālās darbības jomas:</strong>{" "}
+            <strong>Profesionālās darbības jomas:</strong>
           </li>
           <li>
-            {" "}
             Salona fotosesijas: zīdaiņiem, bērniem, ģimenēm, bērniņu gaidot,
             kāzās, pāriem, portretiem, privāti, dzīvniekiem.
           </li>

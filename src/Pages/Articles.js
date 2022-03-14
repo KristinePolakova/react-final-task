@@ -48,44 +48,43 @@ function Articles() {
   return (
     <div className="articleContainer font-family">
       <div className="container ">
-      <div className="row mx-5 px-5">
-        <div className="col-sm-12 my-3">
-          <nav aria-label="breadcrumb">
-            <ol className="breadcrumb">
-              <li className="breadcrumb-item nav-link">
-                <Link className="breadcrumbDecoration font-family" to="/">
-                  Home
-                </Link>
-              </li>
-              <li
-                className="breadcrumb-item active nav-link active-breadcrumb font-family"
-                aria-current="page"
-              >
-                Articles
-              </li>
-            </ol>
-          </nav>
+        <div className="row mx-5 px-5">
+          <div className="col-sm-12 my-3">
+            <nav aria-label="breadcrumb">
+              <ol className="breadcrumb">
+                <li className="breadcrumb-item nav-link">
+                  <Link className="breadcrumbDecoration font-family" to="/">
+                    Home
+                  </Link>
+                </li>
+                <li
+                  className="breadcrumb-item active nav-link active-breadcrumb font-family"
+                  aria-current="page"
+                >
+                  Articles
+                </li>
+              </ol>
+            </nav>
+          </div>
         </div>
-      </div>
-      <div className="pb-5">
-        {displayArticles}
-        <div className="pt-5">
-          <ReactPaginate
-            previousLabel={"Previous"}
-            nextLabel={"Next"}
-            pageCount={pageCount}
-            onPageChange={changePage}
-            containerClassName={"paginationsBttns"}
-            previousLinkClassName={"previousBttn"}
-            nextLinkClassName={"nextBttn"}
-            disabledClassName={"paginationDisabled"}
-            activeClassName={"paginationActive"}
-          />
+        <div className="pb-5">
+          {displayArticles}
+          <div className="pt-5">
+            <ReactPaginate
+              previousLabel={"Previous"}
+              nextLabel={"Next"}
+              pageCount={pageCount}
+              onPageChange={changePage}
+              containerClassName={"paginationsBttns"}
+              previousLinkClassName={"previousBttn"}
+              nextLinkClassName={"nextBttn"}
+              disabledClassName={"paginationDisabled"}
+              activeClassName={"paginationActive"}
+            />
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    
   )
 }
 

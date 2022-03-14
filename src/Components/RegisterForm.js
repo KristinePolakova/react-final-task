@@ -3,7 +3,7 @@ import { Form } from "semantic-ui-react"
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as Yup from "yup"
-import '../Components/RegisterForm.css'
+import "../Components/RegisterForm.css"
 
 function RegisterForm() {
   const validationSchema = Yup.object().shape({
@@ -16,8 +16,7 @@ function RegisterForm() {
     firstName: Yup.string().required(),
     username: Yup.string().required(),
     country: Yup.string().required(),
-    checkbox: Yup.bool()
-    .oneOf([true]),
+    checkbox: Yup.bool().oneOf([true]),
   })
 
   const formOptions = { resolver: yupResolver(validationSchema) }
@@ -31,6 +30,7 @@ function RegisterForm() {
   const onSubmit = (data) => {
     console.log(data)
   }
+  
   return (
     <div>
       <Form onSubmit={handleSubmit(onSubmit)}>

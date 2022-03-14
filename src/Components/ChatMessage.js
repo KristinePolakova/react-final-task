@@ -1,8 +1,7 @@
 import moment from "moment"
 
-
 function ChatMessage(props) {
-  const { message} = props
+  const { message } = props
 
   return (
     <div className="border-bottom">
