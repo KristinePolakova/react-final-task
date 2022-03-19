@@ -2,8 +2,8 @@ import React from "react"
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api"
 
 const containerStyle = {
-  width: "30rem",
-  height: "30rem",
+  width: "24rem",
+  height: "24rem",
 }
 
 const center = {
@@ -11,10 +11,10 @@ const center = {
   lng: 24.074865658093447,
 }
 
-function MyComponent() {
+function googleMap() {
   return (
     <LoadScript googleMapsApiKey={process.env.MAP_KEY}>
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={13}>
         {/* Child components, such as markers, info windows, etc. */}
         <Marker
           position={{
@@ -28,4 +28,4 @@ function MyComponent() {
   )
 }
 
-export default React.memo(MyComponent)
+export default React.memo(googleMap)
